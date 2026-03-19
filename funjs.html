@@ -135,8 +135,25 @@
          catch(error){
             console.log("not vailid data"+error);  
          }
+
         }
         productDatail();
+
+        // IIFE :- is a Java Script function that runs  as soon as it is defined
+
+        (function(){
+            console.log("IIFE");
+         })();
+
+        //short code for above function
+        (msg=>console.log("IIFE"))();
+        console.log(typeof(msg));
+
+        //Local Storage:- 
+
+        let myInfo={
+            
+        }
     </script>
 </body>
 </html>
