@@ -137,7 +137,7 @@
          }
 
         }
-        productDatail();
+        productDetail();
 
         // IIFE :- is a Java Script function that runs  as soon as it is defined
 
@@ -152,8 +152,25 @@
         //Local Storage:- 
 
         let myInfo={
-            
-        }
+            name:'Bhawesh',
+            age:32,
+            mob:6207553732,
+            email:"bhaweshroshan@gmail.com"
+
+        };
+        //convert object into JSONstring 
+        let myInfoData=JSON.stringify(myInfo);
+        lacalStorage.setItem('prefrences',myInfoData);
+
+        //set the data
+        let myprefrence=localStorage.getItem('prefrences');
+
+        //convert into JSON Object
+        
+
+
+        //High order function:-
+
     </script>
 </body>
 </html>
